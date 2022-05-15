@@ -1,0 +1,11 @@
+from tkinter import *
+root = Tk()
+text = Text(root)
+text.insert(END, "Hello..... ")
+text.insert(END, "Bye......")
+text.pack()
+text.tag_add("here", "1.0", "1.7")
+text.tag_add("start", "1.8", "1.13")
+text.tag_config("here", background="yellow", foreground = 'red')
+text.tag_config("start", background="blue", foreground = 'black')
+root.mainloop()
